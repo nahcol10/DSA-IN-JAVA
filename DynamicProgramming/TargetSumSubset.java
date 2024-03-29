@@ -30,7 +30,7 @@ public class TargetSumSubset {
                     }else{
                         int val = arr[i - 1];
                         if(j >= val){
-                            if(dp[i - 1][val - 1]){
+                            if(dp[i - 1][j - val]){
                                 dp[i][j] = true;
                             }
                         }
